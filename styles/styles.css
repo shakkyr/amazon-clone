@@ -228,16 +228,31 @@
 
 .all-btn2 {
     color: #F1FFFF;
-    display: flex;
+    display: inline-block;
+    position: relative;
     justify-content: center;
     align-items: center;
-    width:60px;
+    width:70px;
     padding: 2px;
+    margin-top: 4px;
     font-size: 16px;
     font-weight: 400;
     height: 29px;
     text-decoration: none;
 }
+
+.all-btn2::after {
+    content: '';
+    position: absolute;
+    top: -63px;
+    left: -2px;
+    width: 370px;
+    height: 100vh;
+    display: inline-block;
+    transition: 0.5s;
+    
+}
+
 
 .all-btn2:hover {
     border: white 1px solid;
@@ -275,4 +290,93 @@
 
 .nav2-right:hover {
     border: solid 1px white;
+}
+
+
+/* -------------------page head ------------ */
+.up {
+    display: flex;
+    position: relative;
+    left:300px;
+    top:8px;
+}
+
+.up h5 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #565959;
+}
+
+.up a {
+    text-decoration: none;
+}
+
+
+/* ---------------------Grid----------------------- */
+
+.pic-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 40px;
+    height: 600px;
+    top:45px;
+    left: 220px;
+}
+
+.pic-left a {
+    border: black 0.1px solid;
+    margin-bottom: 8px;
+    border-radius: 2px;
+}
+
+.pic-left a:hover {
+    outline: none;
+    border-color: #e68d1a;
+    box-shadow: 0 0 10px #e68d1a;
+}
+
+.pic-left img {
+        object-fit: contain;
+        width: 40px;
+        height: 40px;
+        padding: 1px;
+        background-position: center;
+        background-size: cover;
+}
+
+.left1 {
+    background: url(/img/first100.jpg) no-repeat center center/cover;
+    width: 40px;
+    height: 40px;
+}
+.left2 {
+    background: url(/img/second350.jpg) no-repeat center center/cover;
+    width: 40px;
+    height: 40px;
+}
+.left3 {
+    background: url(/img/three350.jpg) no-repeat center center/cover;
+    width: 40px;
+    height: 40px;
+}
+.left4 {
+    background: url(/img/four350.jpg) no-repeat center center/cover;
+    width: 40px;
+    height: 40px;
+}
+.left5 {
+    background: url(/img/five350.jpg) no-repeat center center/cover;
+    width: 40px;
+    height: 40px;
+}
+.left6 {
+    background: url(/img/six-350.jpg) no-repeat center center/cover;
+    width: 40px;
+    height: 40px;
+}
+.left7 {
+    background: url(/img/seven-big.jpg) no-repeat center center/cover;
+    width: 40px;
+    height: 40px;
 }
