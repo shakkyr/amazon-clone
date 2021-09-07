@@ -4,6 +4,16 @@
     box-sizing: border-box;
     font-family: "Amazon Ember", Arial, sans-serif;
 }
+.dimmer {
+      background: #000;
+      opacity: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+  }
 
 #navbar1 {
     height: 60px;
@@ -177,13 +187,20 @@
     height: 50px;
     padding:20px 15px 5px 10px;
     margin-top:-10px;
+    transition: 1s;
 }
 
-.language:hover {
+.language:active +.lang {
     border: 1px solid white;
     border-radius: 3px;
+    display: block;
 }
 
+
+
+.language lang ul {
+    display: block;
+}
 .lang {
     padding: 0;
     margin: 0;
@@ -192,6 +209,8 @@
     top:50px;
     left:-55px;
     z-index: 5;
+    display: none;
+    transition: 1s;
 }
 
 .lang input {
@@ -213,13 +232,15 @@
 
 .lang ul li:last-child {
     text-align: center;
-    border:1px solid red;
 }
-.lang en {
-    
+.lang ul :first-child li {
+     border:1px solid red;
+     top: 10px;
+     display: block;
+     ;
 }
 
-input[type='radio'] {
+/* input[type='radio'] {
     appearance:none;
     width:20px;
     height:20px;
@@ -243,7 +264,7 @@ input[type='radio'] {
   }
   input[type='radio']:checked:before {
     background:green;
-  }
+  } */
 
 /* input[type='radio']:after {
     width: 15px;
@@ -557,6 +578,8 @@ input[type='radio']:checked:after {
     height: 679px;
     left:48px;
     visibility: hidden;
+    top:-48px;
+
 }
 
 .left1:hover::after{
@@ -587,7 +610,7 @@ input[type='radio']:checked:after {
 .left2::after {
     content: '';
     position: absolute;
-    background: url(/img/second350.jpg) no-repeat center center/cover;
+    background: url(/img/second-big.jpg) no-repeat center center/cover;
     width: 679px;
     height: 679px;
     left:48px;
@@ -608,7 +631,7 @@ input[type='radio']:checked:after {
 .left3::after {
     content: '';
     position: absolute;
-    background: url(/img/three350.jpg) no-repeat center center/cover;
+    background: url(/img/third-big.jpg) no-repeat center center/cover;
     width: 679px;
     height: 679px;
     left:48px;
@@ -629,7 +652,7 @@ input[type='radio']:checked:after {
 .left4::after {
     content: '';
     position: absolute;
-    background: url(/img/four350.jpg) no-repeat center center/cover;
+    background: url(/img/four-big.jpg) no-repeat center center/cover;
     width: 679px;
     height: 679px;
     left:48px;
@@ -650,7 +673,7 @@ input[type='radio']:checked:after {
 .left5::after {
     content: '';
     position: absolute;
-    background: url(/img/five350.jpg) no-repeat center center/cover;
+    background: url(/img/five-big.jpg) no-repeat center center/cover;
     width: 679px;
     height: 679px;
     left:48px;
@@ -671,7 +694,7 @@ input[type='radio']:checked:after {
 .left6::after {
     content: '';
     position: absolute;
-    background: url(/img/six-350.jpg) no-repeat center center/cover;
+    background: url(/img/six-big.jpg) no-repeat center center/cover;
     width: 679px;
     height: 679px;
     left:48px;
@@ -703,4 +726,13 @@ input[type='radio']:checked:after {
 
 .left7:hover::after{
     visibility: visible;
+}
+
+
+/* -------------------------grid--------------------- */
+
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    gap: 1rem;
 }
