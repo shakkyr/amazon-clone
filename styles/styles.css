@@ -4,16 +4,6 @@
     box-sizing: border-box;
     font-family: "Amazon Ember", Arial, sans-serif;
 }
-.dimmer {
-      background: #000;
-      opacity: 0;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-  }
 
 #navbar1 {
     height: 60px;
@@ -190,7 +180,7 @@
     transition: 1s;
 }
 
-.language:active +.lang {
+.language:hover +.lang {
     border: 1px solid white;
     border-radius: 3px;
     display: block;
@@ -733,6 +723,180 @@ input[type='radio']:checked:after {
 
 .grid {
     display: grid;
-    grid-template-columns: 3fr 2fr 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 25px;
+    max-width: 100%;
+}
+.span-col-3{grid-column: span 3 / auto;}
+
+.span-col-2{grid-column: span 2 / auto;}
+
+.span-row-13{grid-row: span 13 / auto;}
+
+.span-row-12{grid-row: span 12 / auto;}
+
+.span-row-2{grid-row: span 2 / auto;}
+
+.span-row-5{grid-row: span 5 / auto;}
+
+.gb {
+    font-size: 13px;
+    font-weight:100;
+    border-bottom: rgb(204, 199, 199) 1px solid;
+    margin-top: 48px;
+    padding-bottom: 20px;
+}
+
+.gb a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.gb i {
+    color: #EF9C42;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.gb a:last-child {
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.gb h4 a {
+    font-weight: 100;
+}
+
+.gb h3 a {
+    font-weight: 100;
+}
+
+.amz {
+    display: block;
+    
+}
+
+.amz h5, .amz p {
+    display: inline-block;
+}
+
+.amz span {
+    color:#EF9C42 ;
+}
+
+.amz h5 {
+    background-color: black;
+    color: white;
+    padding: 6px;
+}
+
+/* ------------------------grid C------- */
+
+.gc {
+    color: #565959;
+    font-size: 14px;
+    text-align: flex-end;
+    justify-content: center;
+    
+}
+
+.table1 tr td:first-child {
+    width: 70px;
+    height: 10px;
+    float: left;
+}
+
+.gc a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.gc b {
+    color: black;
+}
+
+.gc span{
+    color: #B12704;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.gc h4 {
+    color: #B12704;
+    font-weight: 100;
+}
+
+.gc middle-pic {
+    width: 200px;
+    display: flex;
+}
+
+.middle-pic black-pic {
+    background: url(/img/first100.jpg);
+    width: 200px;
+    height: 200px;
+    border:1px solid red;
+   
+}
+.gc white-pic {
+    
+}
+
+.table2 {
+    border-bottom: rgb(204, 199, 199) 1px solid;
+    padding-bottom: 20px;
+}
+
+
+/* -------------------grid D ----------------- */
+
+.gd h3 {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.gd ul {
+    font-size: 13px;
+    position: relative;
+    left:15px;
+    padding-bottom: 10px;
+}
+
+.gd a {
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.gd span {
+    color: #B12704;
+}
+
+.gd {
+    border-bottom: rgb(204, 199, 199) 1px solid;
+    
+}
+
+/* -----------------grid E ------------- */
+
+.ge img {
+    float: left;
+}
+
+.ge a {
+    text-decoration: none;
+    color: #007185;
+    font-size: 14px;
+}
+
+.ge h4 {
+    font-size: 14px;
+    color: #B12704;
+}
+
+.ge i {
+    color: #EF9C42;
+    font-size: 14px;
 }
