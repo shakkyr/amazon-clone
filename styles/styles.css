@@ -171,7 +171,8 @@
 
 .language {
     position: relative;
-    right: 60px;
+    display: inline-block;
+    right: 70px;
     top:5px;
     width: 55px;
     height: 50px;
@@ -180,20 +181,15 @@
     transition: 1s;
 }
 
-.language:hover +.lang {
-    border: 1px solid white;
-    border-radius: 3px;
-    display: block;
+.language button {
+    background: transparent;
+    border: none;
 }
 
-
-
-.language lang ul {
-    display: block;
-}
 .lang {
     padding: 0;
     margin: 0;
+    width: 200px;
     position: absolute;
     background: #FFFFFF;
     top:50px;
@@ -201,6 +197,11 @@
     z-index: 5;
     display: none;
     transition: 1s;
+}
+.language:hover .lang {
+    border: 1px solid white;
+    border-radius: 3px;
+    display: block;
 }
 
 .lang input {
@@ -220,15 +221,20 @@
     font-weight: 400;
 }
 
-.lang ul li:last-child {
+.lang ul li:nth-child(11) {
+    border-bottom: 1px solid grey;
+}
+.lang ul li:nth-child(10) {
+    border-top: 1px solid grey;
+}
+.lang ul li:nth-child(2) {
+    border-bottom: 1px solid grey;
+}
+.lang ul li:nth-child(13) a{
     text-align: center;
+    color: #0066C0;
 }
-.lang ul :first-child li {
-     border:1px solid red;
-     top: 10px;
-     display: block;
-     ;
-}
+
 
 /* input[type='radio'] {
     appearance:none;
@@ -323,16 +329,96 @@ input[type='radio']:checked:after {
 
 .account {
     position: relative;
+    display: inline-block;
     right: 70px;;
-  
     padding: 10px;
+
 }
 
-.account:hover {
-    border: 1px solid white;
+.account button {
+    background: transparent;
+    border: none;
+}
+
+.sign {
+    position: absolute;
+    background: white;
+    z-index: 5;
+    display: none;
+    height: 384px;
+    width: 489px;
+    right: -140px;
     border-radius: 3px;
 }
 
+.account:hover .sign {
+    border: 1px solid white;
+    border-radius: 3px;
+    display: block;
+}
+.sign button{
+        position: relative;
+        left:180px;
+        text-align: center;
+        display: block;
+        height: 33px;
+        width: 100px;
+        margin: 10px 10px 0 11px;
+        background:#EEBA37;
+        cursor: pointer;
+        outline: 0;
+        border: 1px solid;
+        border-color: #c89411 #b0820f #99710d;
+        border-radius: 3px;
+        box-shadow: inset 0 1px 0 0 #fcf3dc;
+        color: #111;
+        text-decoration: none;
+        line-height: 30px;
+        font-size: 13px;
+        margin-bottom: 10px;
+}
+
+.sign a {
+    text-decoration: none;
+}
+
+.list-1 {
+    float: left;
+    left: 20px;
+    top:20px;
+    margin-left: 30px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.list-1 h4, .list-2 h4{
+    padding-bottom: 15px;
+}
+
+.list-1 h5, .list-2 h5 {
+    color: #444;
+    padding-bottom: 5px;
+}
+
+.list-2 {
+    float: right;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding-left: 20px;
+    border-left: rgb(204, 199, 199) 1px solid;
+}
+
+.account h6 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: rgb(204, 199, 199) 1px solid;
+}
+
+.account h6 a {
+    display: inline-block;
+    color:#0066C0;
+}
 .arrow3{
     position: absolute;
     right:0;
@@ -522,14 +608,20 @@ input[type='radio']:checked:after {
 
 /* ---------------------Grid----------------------- */
 
+
 .pic-left {
     display: flex;
+    position: fixed;
     flex-direction: column;
     position: relative;
     width: 40px;
     height: 600px;
     top:45px;
     left: 220px;
+}
+
+.big-pic {
+    position: fixed;
 }
 
 .pic-left a {
@@ -758,7 +850,7 @@ input[type='radio']:checked:after {
     padding-bottom: 10px;
 }
 
-.gb a:last-child {
+.gb i:last-child {
     padding-right: 20px;
     margin-right: 20px;
 }
@@ -900,3 +992,7 @@ input[type='radio']:checked:after {
     color: #EF9C42;
     font-size: 14px;
 }
+
+
+/* ----------------------------grid F ------------------------- */
+
