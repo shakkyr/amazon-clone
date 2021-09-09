@@ -588,16 +588,13 @@ input[type='radio']:checked:after {
 }
 
 /* -------------------page head ------------ */
-.page {
-    width: 100%;
-}
+
 
 .up {
     display: flex;
     position: relative;
     left:300px;
     top:8px;
-    width: 100%;
 }
 
 .up h5 {
@@ -664,8 +661,8 @@ input[type='radio']:checked:after {
     width: 679px;
     height: 679px;
     left:48px;
-    visibility: hidden;
-    top:-48px;
+    visibility: visible;
+    top:-30px;
 
 }
 
@@ -790,28 +787,6 @@ input[type='radio']:checked:after {
 }
 
 .left6:hover::after{
-    visibility: visible;
-}
-
-.left7 {
-    background: url(/img/seven-big.jpg) no-repeat center center/cover;
-    width: 40px;
-    height: 40px;
-    position: relative;
-}
-
-.left7::after {
-    content: '';
-    position: absolute;
-    background: url(/img/seven-big.jpg) no-repeat center center/cover;
-    width: 667px;
-    height: 385px;
-    left:48px;
-    visibility: hidden;
-    top:-288px;
-}
-
-.left7:hover::after{
     visibility: visible;
 }
 
