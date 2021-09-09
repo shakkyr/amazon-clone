@@ -510,7 +510,7 @@ input[type='radio']:checked:after {
 
 #navbar2 {
     height: 39px;
-    width: 100vw;
+    width: 100%;
     background: #232F3E;
     position: relative;
     top:60;
@@ -588,11 +588,16 @@ input[type='radio']:checked:after {
 }
 
 /* -------------------page head ------------ */
+.page {
+    width: 100%;
+}
+
 .up {
     display: flex;
     position: relative;
     left:300px;
     top:8px;
+    width: 100%;
 }
 
 .up h5 {
@@ -996,3 +1001,64 @@ input[type='radio']:checked:after {
 
 /* ----------------------------grid F ------------------------- */
 
+.gf h4 {
+    font-size: 16px;
+    color: #B12704;
+    font-weight: 500 ;
+}
+
+.gf h5 {
+    color: #565959;
+    font-size: 14px;
+    text-align: flex-end;
+    font-weight: 200;
+}
+
+.gf b {
+    color: black;
+}
+
+.gf a {
+    text-decoration: none;
+    color: #007185;
+    font-size: 14px;
+}
+
+.gf img {
+    margin-right:  10px;
+    width: 13px;
+    
+}
+
+.dvr {
+    margin-bottom: 15px;
+}
+
+.dvr a {
+    font-size: 12px;
+}
+
+.gf p {
+    color: #007600;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 13px;
+}
+
+.quantity select {
+    border-radius: 7px;
+    border-color: #D5D9D9;
+    border-width: 1px;
+    text-align: center;
+    font-size: 12px;
+    padding: 3px;
+    background: whitesmoke;
+}
+
+.quantity select:hover {
+    background: rgb(223, 215, 215);
+}
+
+.quantity select:checked {
+    box-shadow: hotpink;
+}
