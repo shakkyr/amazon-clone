@@ -1032,8 +1032,7 @@ input[type='radio']:checked:after {
 
 .quantity select:hover {
     background: rgb(223, 215, 215);
-}
-
-.quantity select:checked {
-    box-shadow: hotpink;
+    outline: none;
+    border-color: #17e4c8c4;
+    box-shadow: 0 0 10px #17e4c8c4;
 }
