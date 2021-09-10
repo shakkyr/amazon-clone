@@ -7,7 +7,7 @@
 
 #navbar1 {
     height: 60px;
-    width: 100vw;
+    width: 100%;
     background: #131921;
     position: relative;
     top:0;
@@ -84,7 +84,7 @@
 
 .search {
     height: 40px;
-    width: 1253px;
+    width: 1500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,7 +126,7 @@
 
 .search-in {
     height: 40px;
-    width: 1157px;
+    width: 1405px;
     border:none;
     color: #444343;
     padding-left: 10px;
@@ -520,6 +520,7 @@ input[type='radio']:checked:after {
     justify-content: space-between;
 }
 
+
 .all-btn2 {
     color: #F1FFFF;
     display: inline-block;
@@ -533,6 +534,7 @@ input[type='radio']:checked:after {
     font-weight: 400;
     height: 29px;
     text-decoration: none;
+    margin-left: 20px;
 }
 
 .all-btn2::after {
@@ -576,6 +578,10 @@ input[type='radio']:checked:after {
     border: solid 1px white;
 }
 
+.nav2-right {
+    margin-right: 20px;
+}
+
 .nav2-right h4 {
     font-size: 14px;
     font-weight: 700;
@@ -588,13 +594,17 @@ input[type='radio']:checked:after {
 }
 
 /* -------------------page head ------------ */
-
+.page {
+    width: 100%;
+}
 
 .up {
     display: flex;
     position: relative;
     left:300px;
     top:8px;
+    width: 500px;
+    height: 30px;
 }
 
 .up h5 {
@@ -610,6 +620,10 @@ input[type='radio']:checked:after {
 
 /* ---------------------Grid----------------------- */
 
+
+.ga {
+    position:fixed;
+}
 
 .pic-left {
     display: flex;
@@ -662,7 +676,7 @@ input[type='radio']:checked:after {
     height: 679px;
     left:48px;
     visibility: visible;
-    top:-30px;
+    top:-48px;
 
 }
 
@@ -790,10 +804,32 @@ input[type='radio']:checked:after {
     visibility: visible;
 }
 
+.left7 {
+    background: url(/img/seven-big.jpg) no-repeat center center/cover;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.left7::after {
+    content: '';
+    position: absolute;
+    background: url(/img/seven-big.jpg) no-repeat center center/cover;
+    width: 667px;
+    height: 385px;
+    left:48px;
+    visibility: hidden;
+    top:-288px;
+}
+
+.left7:hover::after{
+    visibility: visible;
+}
+
 
 /* -------------------------grid--------------------- */
 
-.grid {
+/* .grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 25px;
@@ -809,9 +845,45 @@ input[type='radio']:checked:after {
 
 .span-row-2{grid-row: span 2 / auto;}
 
-.span-row-5{grid-row: span 5 / auto;}
+.span-row-5{grid-row: span 5 / auto;} */
+
+.grid {
+    display: grid; 
+    grid-template-columns: 2.8fr 1.5fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 25px; 
+    border-bottom: rgb(204, 199, 199) 1px solid;
+    margin-bottom: 20px;
+    
+    grid-template-areas: 
+      "ga gb gf"
+      "ga gb gf"
+      "ga gc gf"
+      "ga gc gf"
+      "ga gd gf"
+      "ga gd gg"
+      "ga gd gh"
+      "ga gd gi"
+      "ga ge gi"; 
+}
+
+.ga { grid-area: ga; }
+.gb { grid-area: gb; }
+.gc { grid-area: gc; }
+.gd { grid-area: gd; }
+.ge { grid-area: ge; }
+.gf { grid-area: gf; }
+.gg { grid-area: gg; }
+.gh { grid-area: gh; }
+.gi { grid-area: gi; }
+
+.grid a:hover {
+    color: indianred;
+}
+}
 
 .gb {
+
     font-size: 13px;
     font-weight:100;
     border-bottom: rgb(204, 199, 199) 1px solid;
@@ -975,6 +1047,13 @@ input[type='radio']:checked:after {
 
 
 /* ----------------------------grid F ------------------------- */
+.gf {
+    width: 70%;
+    margin-top: 48px;
+    padding: 15px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 15px;
+}
 
 .gf h4 {
     font-size: 16px;
@@ -1033,6 +1112,199 @@ input[type='radio']:checked:after {
 .quantity select:hover {
     background: rgb(223, 215, 215);
     outline: none;
-    border-color: #17e4c8c4;
-    box-shadow: 0 0 10px #17e4c8c4;
+    border-color: #29f7b9;
+    box-shadow: 0 0 10px #29f7b9;
 }
+
+.adcart {
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 80%;
+    height: 30px;
+    border-radius: 25px;
+    text-align: center;
+    background: #FFD814;
+    padding: 3px;
+}
+
+.adcart:hover {
+    background: #FCD200;
+}
+
+.bynw {
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 80%;
+    height: 30px;
+    border-radius: 25px;
+    text-align: center;
+    background: #FFA41C;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.bynw:hover {
+    background: #e99b26;
+}
+
+.adcart a, .bynw a {
+    color: black;
+}
+
+.lock {
+    margin-bottom: 15px;
+}
+
+.table-2 td{
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.table-2 a {
+    font-size: 12px;
+}
+
+.table-2 {
+    border-bottom: 1px solid rgb(202, 202, 202);
+    padding-bottom: 7px;
+}
+
+.gf h6 {
+    color: #007185;
+    margin-bottom: 15px;
+}
+
+.gf h5 i {
+    font-size: 8px;
+    color: grey;
+}
+.gf h2 {
+    font-size: 14px;
+}
+
+.blk {
+    display: block;
+    margin-bottom: 15px;
+}
+   
+
+.blk label span {
+    color: #B12704;
+}
+
+.list-4 button {
+    width: 90%;
+    padding: 7px;
+    cursor: pointer;
+    border-radius:4px ;
+    height: 30px;
+    text-align: left;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 60%) inset;
+    background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+    border: 1px solid rgb(168, 167, 167);
+}
+
+.list-4 button:hover {
+    border-color: #e68d1a;
+    box-shadow: 0 0 10px #e68d1a;
+}
+
+/* ----------------------------grid G-------------- */
+
+.new-2 {
+    border:  1px solid rgb(168, 167, 167);
+    width: 70%;
+    margin-top: 20px;
+    height: 45px;
+    padding: 10px 0 0 10px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.new-2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.new-2 a span {
+    color: #B12704;
+}
+
+.new-3 {
+    text-align: center;
+    margin-right: 150px;
+}
+
+.new-3 i {
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.fa-envelope {color: rgb(114, 128, 165);}
+.fa-facebook-square {color: rgb(71, 109, 180);}
+.fa-twitter {color :rgb(118, 163, 246)}
+.fa-pinterest {color:crimson}
+
+.new-3 a {
+    text-decoration: none;
+    color: #007185;
+    font-size: 14px;
+}
+
+
+/* ------------------grid H -------------------------- */
+
+.gh {
+    border:  1px solid rgb(168, 167, 167);
+    width: 70%;
+    border-radius: 7px;
+}
+
+.gh h3 {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(168, 167, 167) ;
+}
+
+.gh p {
+    color: #B12704;
+    padding: 5px;
+}
+
+.gh a {
+    float: right;
+    text-decoration: none;
+    color: #000000;
+    font-size: 11px;
+    margin: 10px;
+    border-radius: 12px;
+    text-align: center;
+    background: #FFD814;
+    padding: 5px;
+}
+
+.gh a:hover {
+    background: #FCD200;
+    color: black;
+}
+
+
+/* ---------------------------------------page 2 -------------------------- */
+
+
+
+.grid-2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ""
+      ""
+      "";
+  }
+  
