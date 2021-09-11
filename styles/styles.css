@@ -850,7 +850,7 @@ input[type='radio']:checked:after {
 
 .grid {
     display: grid; 
-    grid-template-columns: 2.8fr 1.5fr 1fr; 
+    grid-template-columns: 2.3fr 1.2fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     gap: 0px 25px; 
     border-bottom: rgb(204, 199, 199) 1px solid;
@@ -858,13 +858,13 @@ input[type='radio']:checked:after {
     
     grid-template-areas: 
       "ga gb gf"
-      "ga gb gf"
       "ga gc gf"
       "ga gc gf"
       "ga gd gf"
+      "ga gd gf"
       "ga gd gg"
       "ga gd gh"
-      "ga gd gi"
+      "ga ge gi"
       "ga ge gi"; 
 }
 
@@ -881,7 +881,7 @@ input[type='radio']:checked:after {
 .grid a:hover {
     color: indianred;
 }
-}
+
 
 .gb {
 
@@ -889,7 +889,7 @@ input[type='radio']:checked:after {
     font-weight:100;
     border-bottom: rgb(204, 199, 199) 1px solid;
     margin-top: 48px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .gb a {
@@ -942,7 +942,41 @@ input[type='radio']:checked:after {
     font-size: 14px;
     text-align: flex-end;
     justify-content: center;
-    
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.middle-pic {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.black-pic {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border:rgb(204, 199, 199) 1px solid;
+    padding:4px 20px 4px 7px ;
+}
+
+.black-pic:hover {
+    border-color: #e68d1a;
+    box-shadow: 0 0 10px #e68d1a;
+    color: brown;
+}
+.white-pic:hover {
+    border-color: #e68d1a;
+    box-shadow: 0 0 10px #e68d1a;
+    color: brown;
+}
+
+.white-pic {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border:rgb(204, 199, 199) 1px solid;
+    padding:4px 20px 4px 7px ;
 }
 
 .table1 tr td:first-child {
@@ -983,9 +1017,6 @@ input[type='radio']:checked:after {
     border:1px solid red;
    
 }
-.gc white-pic {
-    
-}
 
 .table2 {
     border-bottom: rgb(204, 199, 199) 1px solid;
@@ -1001,7 +1032,8 @@ input[type='radio']:checked:after {
 }
 
 .gd ul {
-    font-size: 13px;
+    font-size: 16px;
+    line-height: 20px;
     position: relative;
     left:15px;
     padding-bottom: 10px;
@@ -1295,9 +1327,6 @@ input[type='radio']:checked:after {
 
 /* ---------------------------------------page 2 -------------------------- */
 
-#page2 {
-   
-}
 .grd-up a {
     text-decoration: none;
     color: #007185; 
